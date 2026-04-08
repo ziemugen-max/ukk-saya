@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/* Container biar ke tengah */
+.container {
+    width: 400px;
+    margin: 80px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Judul */
+h2 {
+    text-align: center;
+}
+
+/* Input */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Tombol */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Navbar atas */
+.navbar {
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+/* KHUSUS RIWAYAT */
+.riwayat-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    overflow-x: auto;
+}
+
+.riwayat-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table-riwayat {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+}
+
+.table-riwayat th, .table-riwayat td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.table-riwayat th {
+    background: black;
+    color: white;
+}
+
+/* STATUS WARNA */
+.status-menunggu {
+    color: orange;
+    font-weight: bold;
+}
+
+.table-riwayat td:last-child {
+    min-width: 130px;
+}
+
+.status-diproses {
+    color: blue;
+    font-weight: bold;
+}
+
+.status-selesai {
+    color: green;
+    font-weight: bold;
+}
+
+/* tombol kembali */
+.btn-kembali {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.navbar {
+    background: #111;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.btn-biru {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-biru:hover {
+    background: #0056b3;
+}
