@@ -22,6 +22,7 @@ $data = mysqli_query($koneksi, "SELECT * FROM inputaspirasi WHERE nis='$nis'");
             <th>Lokasi</th>
             <th>Keterangan</th>
             <th>Status</th>
+            <th>Tanggal</th>
             <th>Foto</th>
         </tr>
 
@@ -41,6 +42,8 @@ $data = mysqli_query($koneksi, "SELECT * FROM inputaspirasi WHERE nis='$nis'");
     }
     ?>
     </td>
+
+    <td><?php echo $d['tanggal']; ?></td>
     
    <td>
 <?php

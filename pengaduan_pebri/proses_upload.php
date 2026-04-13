@@ -11,16 +11,17 @@ $nis = $_SESSION['nis'];
 $nama_file = $_FILES['foto']['name'];
 $tmp = $_FILES['foto']['tmp_name'];
 
-$nama_baru = time() . '_' . $nama_file;
-
-$folder = "uploads/" . $nama_file;
-
-move_uploaded_file($tmp, 'uploads/' . $nama_file);
+if ($nama_file != '') {
+    $nama_baru = time() . '_' . $nama_file;
+    move_uploaded_file($tmp, "uploads/" . $nama_baru);
+} else {
+    $nama_baru = NULL;
+}
 
 $query = mysqli_query($koneksi, "INSERT INTO inputaspirasi 
 (id_kategori,nis, lokasi, ket, status, foto)
 VALUES
-('$id_kategori', '$nis', '$lokasi', '$ket', 'menunggu', '$nama_file')");
+('$id_kategori', '$nis', '$lokasi', '$ket', 'menunggu', '$nama_baru')");
 
 if($query){
     echo "<script>

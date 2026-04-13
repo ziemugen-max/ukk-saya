@@ -52,7 +52,7 @@ Siswa (NIS: <?php echo $_SESSION['nis']; ?> | Kelas: <?php echo $siswa['kelas'];
         <textarea name="ket" placeholder="Isi Aspirasi" required></textarea>
 
 
-        <input type="file" name="foto" required>
+        <input type="file" name="foto" >
 
         <button type="submit">Kirim</button>
 

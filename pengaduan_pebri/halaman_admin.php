@@ -39,6 +39,7 @@ JOIN kategori ON inputaspirasi.id_kategori = kategori.id_kategori
             <th>Keterangan</th>
             <th>Foto</th>
             <th>Status</th>
+            <th>Tanggal</th>
             <th>Aksi</th>
         </tr>
 
@@ -76,6 +77,9 @@ if(!empty($d['foto']) && file_exists($path)){
     ?>
     </td>
 
+    <td><?php echo $d['tanggal']; ?></td>
+
+
     <!-- AKSI -->
     <td>
 <form method="GET" action="update_status.php">
@@ -86,6 +90,7 @@ if(!empty($d['foto']) && file_exists($path)){
         <option value="diproses" <?php if($d['status']=="diproses") echo "selected"; ?>>Diproses</option>
         <option value="selesai" <?php if($d['status']=="selesai") echo "selected"; ?>>Selesai</option>
     </select>
+
 </form>
 </td>
 
